@@ -12,7 +12,7 @@ import {
 export const Sidebar = ({ showMenu }) => {
    return (
       <div
-         className={`lg:left-0 fixed left-0 top-0 h-full w-80 overflow-y-auto border-r border-gray-800 p-8 z-40 flex flex-col justify-between bg-darkGray ${
+         className={`lg:left-0 fixed top-0 h-full w-80 overflow-y-auto border-r border-gray-800 p-8 z-40 flex flex-col justify-between bg-darkGray ${
             showMenu ? "left-0" : "-left-full"
          } transition-all`}
       >

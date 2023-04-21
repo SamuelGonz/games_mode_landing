@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { RiMenu3Fill, RiCloseLine } from "react-icons/ri";
-import { Sidebar } from "./componets/Sidebar";
-import { Header } from "./componets/Header";
+import { Header, MainContent, Sidebar } from "./components";
 
 const App = () => {
    const [showMenu, setShowMenu] = useState(false);
+   console.log("showMenu: ", showMenu);
+
    return (
       <div className="bg-darkGray min-h-screen">
          <Sidebar showMenu={showMenu} />
          <Header />
+         <MainContent />
          {/* Btn menú movil */}
          <button
             onClick={() => setShowMenu(!showMenu)}
